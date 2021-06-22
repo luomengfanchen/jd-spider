@@ -4,6 +4,7 @@ from rich import print as rprint
 wb = openpyxl.Workbook()
 ws = wb.active
 
+# 将数据保存到名为data.xlsx的excel表格中
 def save_data(good_datas):
     for item in good_datas:
         ws.append(item)
